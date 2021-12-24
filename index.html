@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life and General Members</title>
+    <link rel="icon" href="man.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="back">
+        <button>
+           <a href="#home">&larr;Back</a>
+        </button>
+    </div>
+    <div class="form-container">
+        <div class="logo">
+            <img src="man.jpg" alt="">
+        </div>
+        <div class="form">
+
+        <div class="photo">
+
+            <img src="https://www.pngall.com/wp-content/uploads/5/User-Profile-PNG-Image.png" alt="profile image" id="image_upload">
+            <input type="file" onchange="readUrl(this)" id="image_input">
+            
+            <!-- uploading image -->
+            <script src="image.js"></script>
+            <!-- uploading image -->
+        </div>
+
+        <div class="title top-title">
+            <h1>Management Association of Nepal (MAN) </h1>
+            <h2>Application for Individual Membership</h2>
+        </div>
+
+                <div class="title">
+
+                    <p><b>Membership No.:</b></p>
+
+                   <br>
+                   <br> 
+                </div>
+
+
+        
+        <form action="/">
+
+            <!-- general and life radio button -->
+            <fieldset>
+                <legend>Membership Type</legend>
+                <input type="radio" id="general" name="membership-type" value="general">
+                <label for="general">General</label>
+                <input type="radio" id="life" name="membership-type" value="life">
+                <label for="css">Life</label><br>
+            </fieldset>
+            
+
+            <div class="details-container">
+                    <fieldset>
+                        <legend>My Personal Details are as follows</legend>
+
+                        <label for="name">Name</label>
+                        <input type="text" placeholder="Name">
+        
+                        <label for="date">Date of Birth</label>
+                        <input type="date">
+                        <br>
+                        
+                        <label for="">Organization Name</label>
+                        <input type="text" placeholder="Organization's Name">
+
+                        <br>
+                        <label for="">Permanent Address</label>
+                        <input type="address" placeholder="Permanent Address">
+                        
+                        <label for="">Nationality</label>
+                        <input type="text" placeholder="Nationality">
+                        <br>
+                        <label for="">E-mail</label>
+                        <input type="email" placeholder="E-mail">
+                        
+                        <label for="">Contact No.</label>
+                        <input type="number" placeholder="Contact No.">
+                    </fieldset>  
+
+                    <fieldset>
+                        <legend>Present Job</legend>
+
+                        <label for="name">Organization</label>
+                        <input type="text" placeholder="Organization's Name">
+
+                        <label for="name">Position</label>
+                        <input type="text" placeholder="Position">
+
+                        <br>
+                        <label for="">Address</label>
+                        <input type="address" placeholder="Address">
+
+                        <label for="name">Tel No.</label>
+                        <input type="number" placeholder="Tel No.">
+
+                    </fieldset>  
+                    <div id="work-experience">
+
+                    <fieldset id="past-work">
+                        <legend>Past Work Experience</legend>
+
+                        <label for="">Academic Qualification</label>
+                        <input type="text" placeholder="Academic Qualification">
+
+                        <br>
+                        <label for="">Training</label>
+                        <input type="text" placeholder="Training">
+
+                        <label for="">Topic</label>
+                        <input type="text" placeholder="Topic">
+
+                        <br>
+                        <label for="">Institute</label>
+                        <input type="text" placeholder="Institute">
+
+                        <label for="">Duration</label>
+                        <input type="text" placeholder="Duration">
+
+                        <div id="add" class="add-btn">+</div>
+
+                    </fieldset> 
+                    </div>
+                      
+                    <fieldset id="publication">
+                        <legend>Publication</legend>
+
+                        <label for="">Title</label>
+                        <input type="text" placeholder="Title">
+
+                        <label for="">Type</label>
+                        <input type="text" placeholder="Type">
+
+                        <br>
+                        <label for="">Publisher</label>
+                        <input type="text" placeholder="Publisher">
+
+                        <label for="">Year</label>
+                        <input type="number" placeholder="Year">
+                        <div id="addpublicatoin" class="add-btn">+</div>
+
+                    </fieldset>   
+
+                    <fieldset id="medals">
+                        <legend>Medals, Honours & Citations</legend>
+
+                        <label for="">Type</label>
+                        <input type="text" placeholder="Type">
+
+                        <label for="">Organization</label>
+                        <input type="text" placeholder="Organization">
+
+                        <br>
+
+                        <label for="">Year</label>
+                        <input type="number" placeholder="Year">
+                        <div id="add_medals" class="add-btn">+</div>
+
+                    </fieldset>   
+
+                    <fieldset id="involvement">
+                        <legend>Involvement in Other Association</legend>
+
+                        <label for="">Association</label>
+                        <input type="text" placeholder="Association">
+
+                        <label for="">Position</label>
+                        <input type="text" placeholder="Position">
+
+                        <br>
+                        <label for="">From</label>
+                        <input type="text" placeholder="From">
+                        <div id="addInvolvement" class="add-btn">+</div>
+
+                    </fieldset>   
+
+    
+            </div>
+
+                <button type="submit">Submit</button>
+        </form>
+
+        <p style="text-align: center;">
+            Website: <a href="https://www.man.org.np/" style="text-decoration: none; color: navy;">www.man.org.np</a>,
+            E-mail: man@man.org.np
+        </p>
+        
+    </div>
+    </div>
+
+    <script src="index.js"></script>
+    <script src="publication.js"></script>
+    <script src="medals.js"></script>
+    <script src="involvement.js"></script>
+
+</body>
+
+
+</html>
